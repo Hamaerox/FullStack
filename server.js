@@ -7,7 +7,7 @@ const path = require("path")
 
 app.use(express.json())
 app.use(morgan('dev'))
-
+app.use(express.static(path.join(__dirname, "client", "build")))
 
 app.use('/forwarder', require('./routes/forwarders'))
 app.use('/comment', require('./routes/comments'))
@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/1stfullst
     console.log('Booted up!')
 })
 
-app.use(express.static(path.join(__dirname, "client", "build")))
+
 
 app.use((err, req, res, next) => {
     return res.send({errMsg: err.message})
