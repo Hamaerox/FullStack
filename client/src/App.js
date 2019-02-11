@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {Switch, Route} from 'react-router-dom'
-import Landing from './Landing'
 import Home from './Home'
 import Menubar from './Menubar'
 import Popup from 'reactjs-popup'
@@ -52,7 +51,6 @@ class App extends Component{
                 </Popup>
             </div>
             <Switch>
-                <Route exact path='/' component={Landing}/>
                 <Route path='/home' component={Home}/>
                 <Route path='/selectedgame/:id' component={SelectedGame}/>
                 <Route path='/headlines' component={Headlines}/>

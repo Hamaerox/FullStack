@@ -1,1 +1,1 @@
-FrontEnd of this application 
+FrontEnd of this application designed with React.
