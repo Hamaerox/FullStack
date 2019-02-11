@@ -52,7 +52,7 @@ class App extends Component{
                 </Popup>
             </div>
             <Switch>
-                <Route path='/' component={Landing}/>
+                <Route exact path='/' component={Landing}/>
                 <Route path='/home' component={Home}/>
                 <Route path='/selectedgame/:id' component={SelectedGame}/>
                 <Route path='/headlines' component={Headlines}/>
