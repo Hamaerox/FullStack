@@ -12,6 +12,7 @@ import SignUp from './SignUp'
 
 class App extends Component{
     render(){
+        //trying a new way to style
         const styles = {
               fontFamily: "sans-serif",
               textAlign: "center"
