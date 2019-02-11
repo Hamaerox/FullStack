@@ -10,7 +10,7 @@ class Landing extends Component{
     render(){
         return(
             <div className='welcome'>
-                <h1 className='welcome' >Welcome to my FullStack Presentation!</h1>
+                <h1 className='welcome' >Application by:</h1>
                 <div className='tim' >
                     <img src='https://media.giphy.com/media/rQ5i3I1A0Y9VK/source.gif' alt=''/>
                 </div>
